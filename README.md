@@ -1,46 +1,43 @@
-# Astro Starter Kit: Basics
+# 🎧 Spotify Clone
 
-```sh
-npm create astro@latest -- --template basics
-```
+Un clon moderno del popular servicio de música **Spotify**, construido con **[Astro](https://astro.build)** y tecnologías de última generación como **React**, **Svelte**, **TypeScript** y **TailwindCSS**.
 
-> 🧑‍🚀 **Seasoned astronaut?** Delete this file. Have fun!
+>  Este es un proyecto **personal** creado con el objetivo de explorar, practicar y perfeccionar habilidades en desarrollo web moderno utilizando tecnologías de vanguardia.
 
-## 🚀 Project Structure
+---
 
-Inside of your Astro project, you'll see the following folders and files:
+## ⚡ Tecnologías principales
 
-```text
-/
-├── public/
-│   └── favicon.svg
-├── src
-│   ├── assets
-│   │   └── astro.svg
-│   ├── components
-│   │   └── Welcome.astro
-│   ├── layouts
-│   │   └── Layout.astro
-│   └── pages
-│       └── index.astro
-└── package.json
-```
+-  **Astro** — Generador de sitios front-end ultra rápido  
+-  **React** — Componentes interactivos y control del estado  
+-  **Svelte** — Componentes ligeros y reactividad nativa  
+-  **TailwindCSS** — Estilos elegantes y consistentes  
+-  **TypeScript** — Tipado estático para un desarrollo más seguro  
 
-To learn more about the folder structure of an Astro project, refer to [our guide on project structure](https://docs.astro.build/en/basics/project-structure/).
+---
 
-## 🧞 Commands
+## 🎵 Características
 
-All commands are run from the root of the project, from a terminal:
+-  Interfaz inspirada en **Spotify**  
+-  Reproducción de canciones con control de audio  
+-  Lista de canciones y álbumes  
+-  Diseño adaptable y animaciones suaves  
+-  Estado global del reproductor de música  
 
-| Command                   | Action                                           |
-| :------------------------ | :----------------------------------------------- |
-| `npm install`             | Installs dependencies                            |
-| `npm run dev`             | Starts local dev server at `localhost:4321`      |
-| `npm run build`           | Build your production site to `./dist/`          |
-| `npm run preview`         | Preview your build locally, before deploying     |
-| `npm run astro ...`       | Run CLI commands like `astro add`, `astro check` |
-| `npm run astro -- --help` | Get help using the Astro CLI                     |
+---
 
-## 👀 Want to learn more?
+## ⚙️ Instalación y ejecución
 
-Feel free to check [our documentation](https://docs.astro.build) or jump into our [Discord server](https://astro.build/chat).
+```bash
+# Clonar el repositorio
+git clone https://github.com/tuusuario/spotify-clone.git
+
+# Entrar al directorio del proyecto
+cd spotify-clone
+
+# Instalar dependencias
+npm install
+
+# Ejecutar el entorno de desarrollo
+npm run dev
+
