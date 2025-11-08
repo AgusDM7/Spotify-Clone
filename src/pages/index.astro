@@ -1,0 +1,109 @@
+---
+import Layout from "../layouts/Layout.astro";
+import PlayListItemCard from "@/components/PlayListItemCard.astro";
+import { playlists } from "@/lib/data";
+import Greeting from "@/components/Greeting.svelte";
+---
+
+<Layout title="Spotify Clone">
+  <div
+    id="playlist-container"
+    class="relative transition-all duration-1000 bg-neutral-800"
+  >
+    <div class="relative z-10 px-6 pt-14">
+      <Greeting />
+      <div class="flex flex-wrap mt-6 gap-4">
+        {playlists.map((playlist) => <PlayListItemCard playlist={playlist} />)}
+      </div>
+
+      <div
+        class="absolute inset-0 bg-gradient-to-t from-neutral-900 via-neutral-900/80 -z-[1]"
+      >
+      </div>
+    </div>
+  </div>
+</Layout>
+
+<script>
+  
+  const DEFAULT_COLOR = "#312e81";
+
+  // Función para cambiar el color de fondo del contenedor del index
+  function changeBackgroundColor(color: string) {
+    const container = document.getElementById("playlist-container");
+    if (container) {
+      container.style.backgroundColor = color;
+    }
+  }
+
+  
+
+  // Función de inicialización
+  function initHoverEffect() {
+    const container = document.getElementById("playlist-container");
+
+    // Solo inicializar si NO tiene el atributo style (es el index, no la página de detalle)
+    if (!container || container.hasAttribute("style")) return;
+
+    
+    container.removeAttribute("style");
+    container.style.backgroundColor = DEFAULT_COLOR;
+
+    // Seleccionar todas las tarjetas de playlist
+    const playlistCards = document.querySelectorAll("[data-playlist-id]");
+
+    playlistCards.forEach((card) => {
+      // Obtener el color del álbum desde el atributo data
+      const albumColor = card.getAttribute("data-album-color");
+
+      // Remover listeners previos si existen (clonar nodo para limpiar eventos)
+      const newCard = card.cloneNode(true);
+      card.parentNode?.replaceChild(newCard, card);
+
+      // Agregar eventos al nuevo nodo
+      newCard.addEventListener("mouseenter", () => {
+        if (albumColor) {
+          changeBackgroundColor(albumColor);
+        }
+      });
+
+      newCard.addEventListener("mouseleave", () => {
+        changeBackgroundColor(DEFAULT_COLOR);
+      });
+    });
+  }
+
+
+  // Ejecutar al cargar la página
+  document.addEventListener("astro:page-load", initHoverEffect);
+
+  
+  // Ejecutar antes de las transiciones para limpiar
+  document.addEventListener("astro:before-preparation", () => {
+    const container = document.getElementById("playlist-container");
+    if (container) {
+      // Resetear completamente el estilo
+      container.removeAttribute("style");
+    }
+  });
+
+
+
+  // Ejecutar después de las transiciones
+  document.addEventListener("astro:after-swap", () => {
+    // Pequeño delay para asegurar que el DOM esté completamente actualizado
+    setTimeout(() => {
+      const container = document.getElementById("playlist-container");
+      if (container) {
+        // Si es el index (sin style inline de Astro)
+        if (!container.getAttribute("style")?.includes("background-color")) {
+          container.removeAttribute("style");
+          container.style.backgroundColor = DEFAULT_COLOR;
+          initHoverEffect();
+        }
+      }
+    }, 10);
+  });
+</script>
+
+{/* bg-green-600 */}
