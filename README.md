@@ -6,6 +6,16 @@ Un clon moderno del popular servicio de música **Spotify**, construido con **[A
 
 ---
 
+## 🎵 Características
+
+-  Interfaz inspirada en **Spotify**  
+-  Reproducción de canciones con control de audio  
+-  Lista de canciones y álbumes
+-  Funcionalidades de búsqueda. 
+-  Diseño adaptable y animaciones suaves  
+-  Estado global del reproductor de música  
+
+---
 ## ⚡ Tecnologías principales
 
 -  **Astro** — Generador de sitios front-end ultra rápido  
@@ -15,14 +25,6 @@ Un clon moderno del popular servicio de música **Spotify**, construido con **[A
 -  **TypeScript** — Tipado estático para un desarrollo más seguro  
 
 ---
-
-## 🎵 Características
-
--  Interfaz inspirada en **Spotify**  
--  Reproducción de canciones con control de audio  
--  Lista de canciones y álbumes  
--  Diseño adaptable y animaciones suaves  
--  Estado global del reproductor de música  
 
 ---
 
