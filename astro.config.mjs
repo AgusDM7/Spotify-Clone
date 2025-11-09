@@ -4,7 +4,7 @@ import { defineConfig } from 'astro/config';
 // Integraciones
 import react from '@astrojs/react';
 import svelte from '@astrojs/svelte';
-import netlify from '@astrojs/netlify'; // 👈 Importamos el adapter
+import vercel from '@astrojs/vercel'; // 👈 versión recomendada sin /serverless
 
 // https://astro.build/config
 export default defineConfig({
@@ -16,9 +16,7 @@ export default defineConfig({
 
   integrations: [react(), svelte()],
 
-  
-  adapter: netlify(),
+  adapter: vercel({}), 
 
-  
-  output: 'server',
+  output: 'server', 
 });
