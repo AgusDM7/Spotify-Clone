@@ -20,19 +20,10 @@ export const playlists: Playlist[] = [
       "https://image-cdn-ak.spotifycdn.com/image/ab67706c0000da84587ecba4a27774b2f6f07174",
     artists: ["Tu usuario"],
   },
-
+  
   {
     id: '2',
     albumId: 2,
-    title: "Chill Lo-Fi Music",
-    color: colors.yellow,
-    cover:
-      "https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg",
-    artists: ["NoSpirit", "Casiio"],
-  },
-  {
-    id: '3',
-    albumId: 3,
     title: "Lo-Fi Chill Session",
     color: colors.green,
     cover:
@@ -40,8 +31,8 @@ export const playlists: Playlist[] = [
     artists: ["Kupla", "Blue Fox"],
   },
   {
-    id: '4',
-    albumId: 4,
+    id: '3',
+    albumId: 3,
     title: "Study Session",
     color: colors.rose,
     cover:
@@ -49,8 +40,8 @@ export const playlists: Playlist[] = [
     artists: ["Tenno", "xander", "Team Astro"],
   },
   {
-    id: '5',
-    albumId: 5,
+    id: '4',
+    albumId: 4,
     title: "Blue Note Study Time",
     color: colors.blue,
     cover:
@@ -58,8 +49,8 @@ export const playlists: Playlist[] = [
     artists: ["Raimu", "Yasumu"],
   },
   {
-    id: '6',
-    albumId: 6,
+    id: '5',
+    albumId: 5,
     title: "Chau Saura Session",
     color: colors.purple,
     cover:
@@ -67,15 +58,28 @@ export const playlists: Playlist[] = [
     artists: ["Chau Saura", "amies", "kyu"],
   },
   {
-    id: '7',
-    albumId: 7,
+    id: '6',
+    albumId: 6,
     title: "Like a Necessity",
     color: colors.orange,
     cover:
       "https://f4.bcbits.com/img/a0363730459_16.jpg",
     artists: ["WFS", "Nadav Cohen"],
   },
+
+  {
+    id: '7',
+    albumId: 7,
+    title: "Chill Lo-Fi Music",
+    color: colors.yellow,
+    cover:
+      "https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg",
+    artists: ["NoSpirit", "Casiio"],
+  },
+
 ];
+
+
 
 export const morePlaylists = playlists.map((item) => ({
   ...item,
@@ -109,160 +113,104 @@ export const songs: Song[] = [
   {
     "id": 1,
     "albumId": 1,
-    "title": "Moonlit Walk",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "2:57"
+    "title": "Silent Rain",
+    "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
+    "artists": ["Urban Nocturne"],
+    "album": "Lo-Fi Chill Session",
+    "duration": "2:38"
   },
 
   {
     "id": 2,
     "albumId": 1,
-    "title": "Silent Rain",
-    "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
-    "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
-    "duration": "2:38"
-  },
-
-  {
-    "id": 3,
-    "albumId": 1,
-    "title": "Night Drive",
-    "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
-    "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
-    "duration": "2:58"
-  },
-
-  {
-    "id": 4,
-    "albumId": 1,
-    "title": "Lunar",
+    "title": "Go go go!",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
     "album": "Study Session",
-    "duration": "3:06"
+    "duration": "1:30"
   },
 
   {
-    "id": 5,
+    "id": 3,
     "albumId": 1,
-    "title": "Lunar",
+    "title": "Dusk",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
     "artists": ["Tenno"],
-    "album": "Study Session",
-    "duration": "2:59"
+    "album": "Blue Note Study Time",
+    "duration": "3:02"
   },
 
   {
-    "id": 6,
+    "id": 4,
     "albumId": 1,
-    "title": "Moonlit Walk",
+    "title": "Urban Echoes",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
     "album": "Chill Lo-Fi Music",
-    "duration": "3:49"
+    "duration": "4:06"
   },
 
-
-
-
-
-  {
-    "id": 1,
-    "albumId": 2,
-    "title": "Moonlit Walk",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "2:57"
-  },
-  {
-    "id": 2,
-    "albumId": 2,
-    "title": "Coffee Daze",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "3:40"
-  },
-  {
-    "id": 3,
-    "albumId": 2,
-    "title": "Skyline Serenade",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "3:29"
-  },
-  {
-    "id": 4,
-    "albumId": 2,
-    "title": "Urban Echoes",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "2:11"
-  },
   {
     "id": 5,
-    "albumId": 2,
-    "title": "Night's End",
-    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
-    "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
-    "duration": "2:26"
+    "albumId": 1,
+    "title": "Midnight Farewell",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:29"
   },
+
+
+
+
   {
     "id": 1,
-    "albumId": 3,
+    "albumId": 2,
     "title": "Silent Rain",
     "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "2:38"
   },
   {
     "id": 2,
-    "albumId": 3,
+    "albumId": 2,
     "title": "Lost Pages",
     "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "2:40"
   },
   {
     "id": 3,
-    "albumId": 3,
-    "title": "Midnight Tales",
+    "albumId": 2,
+    "title": " Midnight Tales",
     "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "2:53"
   },
   {
     "id": 4,
-    "albumId": 3,
+    "albumId": 2,
     "title": "City Lights",
     "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "3:11"
   },
   {
     "id": 5,
-    "albumId": 3,
+    "albumId": 2,
     "title": "Night Drive",
     "image": `https://i.ytimg.com/vi/tgI6PjEq0O8/maxresdefault.jpg`,
     "artists": ["Urban Nocturne"],
-    "album": "Midnight Tales",
+    "album": "Lo-Fi Chill Session",
     "duration": "2:58"
   },
   {
     "id": 1,
-    "albumId": 4,
+    "albumId": 3,
     "title": "Lunar",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
@@ -271,7 +219,7 @@ export const songs: Song[] = [
   },
   {
     "id": 2,
-    "albumId": 4,
+    "albumId": 3,
     "title": "Go go go!",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
@@ -280,7 +228,7 @@ export const songs: Song[] = [
   },
   {
     "id": 3,
-    "albumId": 4,
+    "albumId": 3,
     "title": "Keep focus!",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
@@ -289,7 +237,7 @@ export const songs: Song[] = [
   },
   {
     "id": 4,
-    "albumId": 4,
+    "albumId": 3,
     "title": "JavaScript is the way",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
@@ -298,7 +246,7 @@ export const songs: Song[] = [
   },
   {
     "id": 5,
-    "albumId": 4,
+    "albumId": 3,
     "title": "No more TypeScript for me",
     "image": `https://f4.bcbits.com/img/a1435058381_65.jpg`,
     "artists": ["Tenno"],
@@ -307,92 +255,187 @@ export const songs: Song[] = [
   },
   {
     "id": 1,
-    "albumId": 5,
-    "title": "Lunar",
+    "albumId": 4,
+    "title": "Clouds",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    "artists": ["Tenno"],
-    "album": "Study Session",
+    "artists": ["takeo"],
+    "album": "Blue Note Study Time",
     "duration": "2:59"
   },
   {
     "id": 2,
-    "albumId": 5,
-    "title": "Go go go!",
+    "albumId": 4,
+    "title": "New Ligth",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    "artists": ["Tenno"],
-    "album": "Study Session",
+    "artists": ["Slow Burn"],
+    "album": "Blue Note Study Time",
     "duration": "2:12"
   },
   {
     "id": 3,
-    "albumId": 5,
-    "title": "Keep focus!",
+    "albumId": 4,
+    "title": "Dusk",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    "artists": ["Tenno"],
-    "album": "Study Session",
+    "artists": ["Hazy Year"],
+    "album": "Blue Note Study Time",
     "duration": "3:02"
   },
   {
     "id": 4,
-    "albumId": 5,
-    "title": "JavaScript is the way",
+    "albumId": 4,
+    "title": "Blue Moon",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    "artists": ["Tenno"],
-    "album": "Study Session",
+    "artists": ["takeo"],
+    "album": "Blue Note Study Time",
     "duration": "2:29"
   },
   {
     "id": 5,
-    "albumId": 5,
-    "title": "No more TypeScript for me",
+    "albumId": 4,
+    "title": "Crates",
     "image": "https://f4.bcbits.com/img/a1962013209_16.jpg",
-    "artists": ["Tenno"],
-    "album": "Study Session",
+    "artists": ["takeo"],
+    "album": "Blue Note Study Time",
     "duration": "2:29"
   },
   {
     "id": 1,
-    "albumId": 6,
+    "albumId": 5,
     "title": "Moonlit Walk",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "3:49"
   },
   {
     "id": 2,
-    "albumId": 6,
+    "albumId": 5,
     "title": "Coffee Daze",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "1:52"
   },
   {
     "id": 3,
-    "albumId": 6,
+    "albumId": 5,
     "title": "Skyline Serenade",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "2:15"
   },
   {
     "id": 4,
-    "albumId": 6,
+    "albumId": 5,
     "title": "Urban Echoes",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "4:06"
   },
   {
     "id": 5,
-    "albumId": 6,
+    "albumId": 5,
     "title": "Night's End",
     "image": "https://f4.bcbits.com/img/a2793859494_16.jpg",
     "artists": ["LoFi Dreamer"],
-    "album": "Chill Lo-Fi Music",
+    "album": "Chau Saura Session",
     "duration": "2:54"
   },
+
+
+  {
+    "id": 1,
+    "albumId": 6,
+    "title": "Starlight Stroll",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "1:56"
+  },
+  {
+    "id": 2,
+    "albumId": 6,
+    "title": "Morning Brew",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "1:48"
+  },
+  {
+    "id": 3,
+    "albumId": 6,
+    "title": "City Lights Melody",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:35"
+  },
+  {
+    "id": 4,
+    "albumId": 6,
+    "title": "Metropolitan Whispers",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:48"
+  },
+  {
+    "id": 5,
+    "albumId": 6,
+    "title": "Midnight Farewell",
+    "image": "https://f4.bcbits.com/img/a0363730459_16.jpg",
+    "artists": ["WFS", "Nadav Cohen"],
+    "album": "Like a Necessity",
+    "duration": "2:29"
+  },
+
+
+  {
+    "id": 1,
+    "albumId": 7,
+    "title": "Moonlit Walk",
+    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
+    "artists": ["Daemon"],
+    "album": "Chill Lo-Fi Music",
+    "duration": "2:57"
+  },
+  {
+    "id": 2,
+    "albumId": 7,
+    "title": "Coffee Daze",
+    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
+    "artists": ["Daemon"],
+    "album": "Chill Lo-Fi Music",
+    "duration": "3:40"
+  },
+  {
+    "id": 3,
+    "albumId": 7,
+    "title": "Skyline Serenade",
+    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
+    "artists": ["Daemon"],
+    "album": "Chill Lo-Fi Music",
+    "duration": "3:29"
+  },
+  {
+    "id": 4,
+    "albumId": 7,
+    "title": "Stay",
+    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
+    "artists": ["Daemon"],
+    "album": "Chill Lo-Fi Music",
+    "duration": "2:11"
+  },
+  {
+    "id": 5,
+    "albumId": 7,
+    "title": "Night's End",
+    "image": `https://noz-spotify-clone-astro.vercel.app/music/artists/nospirit-casiio/albums/chill-lo-fi-music/cover.jpg`,
+    "artists": ["Daemon"],
+    "album": "Chill Lo-Fi Music",
+    "duration": "2:26"
+  },
+
 ]
